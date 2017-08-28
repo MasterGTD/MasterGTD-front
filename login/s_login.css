@@ -56,9 +56,9 @@ ul,li{
 #part2 .hide{
 	display: none;
 }
-ul li.on{
+/*ul li.on{
 	text-decoration: underline;
-}
+}*/
 #form_in , #form_up{
 	border: none;
 	margin: 100px 0 0 0;
