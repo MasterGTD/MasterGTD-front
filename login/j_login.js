@@ -39,11 +39,15 @@ $(document).ready(function(){
         $("#form_up").fadeOut(700,function(){
             $("#form_in").fadeIn(700);
         });
+        $("#up").css("text-decoration","none");
+        $("#in").css("text-decoration","underline");
     });
     $("#up").click(function(){
         $("#form_in").fadeOut(700,function(){
             $("#form_up").fadeIn(700);
         });
+        $("#in").css("text-decoration","none");
+        $("#up").css("text-decoration","underline");
     });
 });
 

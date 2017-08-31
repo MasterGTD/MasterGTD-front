@@ -8,36 +8,23 @@ body{
 	/*background-size:100%;*/
 }
 #part1{
-	display: flex;
 	margin: 30px 20px;
 }
 #left{
-	flex: 9;
 	font-family:方正姚体;
 	color: #F8F8FF;
 	font-size: 30px;
 	padding: 0 30px;
+	float: left;
 }
 #bold{
 	font-weight: 800;
 	color: white;
 }
-#part1 ul{
-	flex: 2;
-	display: flex;
-}
-
 .right{
-	flex: 1;
+	float: right;
+	margin: 0 20px;
 }
-/*#part1 .right button{
-	border: none;
-	background-color:transparent;
-	font-size: 20px;
-	color: white;
-	cursor: pointer;
-	outline: none;
-}*/
 ul,li{
 	border: none;
 	background-color:transparent;
@@ -56,9 +43,9 @@ ul,li{
 #part2 .hide{
 	display: none;
 }
-/*ul li.on{
+ul li.on{
 	text-decoration: underline;
-}*/
+}
 #form_in , #form_up{
 	border: none;
 	margin: 100px 0 0 0;
