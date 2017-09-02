@@ -34,23 +34,32 @@ window.onload = function(){
 }
 
 //切换注册和登录 法2
+var isShown = false;
 $(document).ready(function(){
     $("#in").click(function(){
-        $("#form_up").fadeOut(700,function(){
-            $("#form_in").fadeIn(700);
-        });
-        $("#up").css("text-decoration","none");
-        $("#in").css("text-decoration","underline");
+        if (!isShown) {
+            isShown = true;
+            $("#form_up").fadeOut(700,function(){
+                $("#form_in").fadeIn(700);
+            });
+            $("#up").css("text-decoration","none");
+            $("#in").css("text-decoration","underline");
+            isShown = false;
+        }
     });
+
     $("#up").click(function(){
-        $("#form_in").fadeOut(700,function(){
-            $("#form_up").fadeIn(700);
-        });
-        $("#in").css("text-decoration","none");
-        $("#up").css("text-decoration","underline");
+        if (!isShown) {
+            isShown = true;
+            $("#form_in").fadeOut(700,function(){
+                $("#form_up").fadeIn(700);
+            });
+            $("#in").css("text-decoration","none");
+            $("#up").css("text-decoration","underline");    
+            isShown = false;
+        }
     });
 });
-
 //表单验证
 $(function(){
 
