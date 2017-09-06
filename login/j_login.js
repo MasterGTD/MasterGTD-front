@@ -40,11 +40,11 @@ $(document).ready(function(){
         if (!isShown) {
             isShown = true;
             $("#form_up").fadeOut(700,function(){
+                isShown = false;
                 $("#form_in").fadeIn(700);
             });
             $("#up").css("text-decoration","none");
-            $("#in").css("text-decoration","underline");
-            isShown = false;
+            $("#in").css("text-decoration","underline");   
         }
     });
 
@@ -52,46 +52,48 @@ $(document).ready(function(){
         if (!isShown) {
             isShown = true;
             $("#form_in").fadeOut(700,function(){
+                isShown = false;
                 $("#form_up").fadeIn(700);
             });
             $("#in").css("text-decoration","none");
             $("#up").css("text-decoration","underline");    
-            isShown = false;
         }
     });
 });
-//表单验证
-$(function(){
 
-        var ok1=false;
-        var ok2=false;
-        var ok3=false;
-        var ok4=false;
+
+//表单验证
+// $(function(){
+
+//         var ok1=false;
+//         var ok2=false;
+//         var ok3=false;
+//         var ok4=false;
         // 验证用户名
-        $('input[name="username"]').focus(function(){
-          $(this).next().text('用户名应该为3-20位之间');
-        }).blur(function(){
-          if($(this).val().length >= 3 && $(this).val().length <=12 && $(this).val()!=''){
-            $(this).next().text('输入成功');
-            ok1=true;
-          }else{
-            $(this).next().text('用户名应该为3-20位之间');
-          }
+        // $('input[name="username"]').focus(function(){
+        //   $(this).next().text('用户名应该为3-20位之间');
+        // }).blur(function(){
+        //   if($(this).val().length >= 3 && $(this).val().length <=12 && $(this).val()!=''){
+        //     $(this).next().text('输入成功');
+        //     ok1=true;
+        //   }else{
+        //     $(this).next().text('用户名应该为3-20位之间');
+        //   }
             
-        });
+        // });
   
-        //验证密码
-        $('input[name="password"]').focus(function(){
-          $(this).next().text('密码应该为6-20位之间');
-        }).blur(function(){
-          if($(this).val().length >= 6 && $(this).val().length <=20 && $(this).val()!=''){
-            $(this).next().text('输入成功');
-            ok2=true;
-          }else{
-            $(this).next().text('密码应该为6-20位之间');
-          }
+        // //验证密码
+        // $('input[name="password"]').focus(function(){
+        //   $(this).next().text('密码应该为6-20位之间');
+        // }).blur(function(){
+        //   if($(this).val().length >= 6 && $(this).val().length <=20 && $(this).val()!=''){
+        //     $(this).next().text('输入成功');
+        //     ok2=true;
+        //   }else{
+        //     $(this).next().text('密码应该为6-20位之间');
+        //   }
             
-        });
+        // });
   
         //验证确认密码
         //   $('input[name="repass"]').focus(function(){
@@ -107,26 +109,47 @@ $(function(){
         // });
   
         //验证邮箱
-        $('input[name="email"]').focus(function(){
-          $(this).next().text('请输入正确的EMAIL格式');
-        }).blur(function(){
-          if($(this).val().search(/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/)==-1){
-            $(this).next().text('请输入正确的EMAIL格式');
-          }else{         
-            $(this).next().text('输入成功');
-            ok4=true;
-          }
+        // $('input[name="email"]').focus(function(){
+        //   $(this).next().text('请输入正确的EMAIL格式');
+        // }).blur(function(){
+        //   if($(this).val().search(/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/)==-1){
+        //     $(this).next().text('请输入正确的EMAIL格式');
+        //   }else{         
+        //     $(this).next().text('输入成功');
+        //     ok4=true;
+        //   }
             
-        });
+        // });
   
         //提交按钮,所有验证通过方可提交
   
-        $('.button').click(function(){
-          if(ok1 && ok2 &&  ok4){
-            $('form').submit();
-          }else{
-            return false;
-          }
-        });
+    //     $('.button').click(function(){
+    //       if(ok1 && ok2 &&  ok4){
+    //         $('form').submit();
+    //       }else{
+    //         return false;
+    //       }
+    //     });
           
-    });
+    // });
+
+// $(document).ready(function(){
+//     function validate_email(field,alerttxt){
+//         with (field){
+//             apos=value.indexOf("@")
+//             dotpos=value.lastIndexOf(".")
+//             if (apos<1||dotpos-apos<2) 
+//               {alert(alerttxt);return false}
+//             else {return true}
+//         }
+//     }
+
+//     function validate_form(thisform)
+//     {
+//     with (thisform)
+//     {
+//     if (validate_email(email,"Not a valid e-mail address!")==false)
+//       {email.focus();return false}
+//     }
+//     }
+// })
