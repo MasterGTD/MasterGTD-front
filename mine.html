@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>谨行</title>
+	<meta charset="utf-8">
+
+	<!-- UI框架MDUI -->
+	<link rel="stylesheet" type="text/css" href="mdui/css/mdui.min.css">
+	<script type="text/javascript" src="mdui/js/mdui.min.js"></script>
+</head>
+<body>
+	<!-- 上方导航条 -->
+	<div class="mdui-appbar mdui-appbar-scroll-hide" style="margin-bottom: 20px;">
+		<!-- 工具栏 -->
+	  <div class="mdui-toolbar mdui-color-deep-purple-900">
+	    <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe068;</i></a>
+	    <a href="javascript:;" class="mdui-typo-title">GTDMaster</a>
+	    <div class="mdui-toolbar-spacer"></div>
+	    <a href="" class="mdui-btn">注册</a>
+	    <a href="" class="mdui-btn">登录</a>
+	  </div>
+	  <!-- tab选项卡 -->
+	  <div class="mdui-tab mdui-color-deep-purple-900 mdui-container-fluid mdui-row" mdui-tab>
+	    <a href="#example3-tab1" class="mdui-ripple mdui-ripple-white">我的</a>
+	    <a href="#example3-tab1" class="mdui-ripple mdui-ripple-white">关注</a>
+	    <a href="#example3-tab1" class="mdui-ripple mdui-ripple-white">推荐</a>
+	    <a href="#example3-tab1" class="mdui-ripple mdui-ripple-white">设置</a>
+	    <div class="mdui-toolbar-spacer"></div>
+	    <div class="mdui-textfield mdui-col-xs-3" >
+			  <i class="mdui-icon material-icons" style="color: white;">search</i>
+			  <input type="text" class="mdui-textfield-input searchbar_input searchbar_input_activity" style="color: black;border-color:white; background:white; border-radius:12px; padding-left: 15px; " placeholder="whatever comes to your mind" />
+			</div>
+	  </div>
+	</div>
+	<!-- nav-end -->
+	<!-- 个人信息部分 -->
+	<div class="mdui-container-fluid">
+		<div class="mdui-row">
+			<!-- 左侧资料卡 -->
+			<div class="mdui-col-md-2 mdui-col-offset-md-2">
+				<img src="html_imgs/ciel.jpg" class="mdui-img-fluid mdui-img-rounded">
+				<p style="font-size: 18px; font-weight:300; color: #311B92;">来杯98年的橙汁</p>
+				<p style="font-size: 14px; font-style: oblique;">ACGN/代码/社会主义好姑娘</p>
+				<div class="mdui-divider" style="margin-bottom: 20px;"></div>
+				<div class="mdui-divider"></div>
+				<p style="font-weight:300;">已完成的项目</p>
+				<div class="mdui-chip">
+				  <span class="mdui-chip-title">og-in-cj</span>
+				</div>
+				<div class="mdui-chip">
+				  <span class="mdui-chip-title">public-transport-information</span>
+				</div>
+				<div class="mdui-chip">
+				  <span class="mdui-chip-title">animation-js</span>
+				</div>
+				<div class="mdui-chip">
+				  <span class="mdui-chip-title">code-for-c</span>
+				</div>
+			</div>
+			<!-- 右侧各种项目 -->
+			<div class="mdui-col-md-6 " style="margin-left: 10px;">
+				<div class="mdui-tab" mdui-tab style="border-bottom: 1px solid #BDBDBD">
+				  <a href="#list" class="mdui-ripple">今日清单</a>
+				  <a href="#projet" class="mdui-ripple">我的项目</a>
+				  <a href="#statistics" class="mdui-ripple">数据统计</a>
+				  <a href="#following" class="mdui-ripple">我关注的</a>
+				  <a href="#followers" class="mdui-ripple">关注我的</a>
+				</div>
+				<!-- 清单 -->
+
+				<div id="list" class="mdui-p-a-2">
+					<div class="mdui-list">
+						<div class="mdui-divider"></div>
+						<p>日常</p>
+					  <label class="mdui-list-item mdui-ripple">
+					    <div class="mdui-checkbox">
+					      <input type="checkbox" />
+					      <i class="mdui-checkbox-icon"></i>
+					    </div>
+					    <div class="mdui-list-item-content">单词</div>
+					    <!-- <i class="mdui-list-item-icon mdui-icon material-icons">chat</i> -->
+					  </label>
+
+					  <label class="mdui-list-item mdui-ripple">
+					    <div class="mdui-checkbox">
+					      <input type="checkbox"/>
+					      <i class="mdui-checkbox-icon"></i>
+					    </div>
+					    <div class="mdui-list-item-content">刷题</div>
+					    <!-- <i class="mdui-list-item-icon mdui-icon material-icons">chat</i> -->
+					  </label>
+
+					  <label class="mdui-list-item mdui-ripple">
+					    <div class="mdui-checkbox">
+					      <input type="checkbox" />
+					      <i class="mdui-checkbox-icon mdui-color-blue-60"  ></i>
+					    </div>
+					    <div class="mdui-list-item-content" >练字</div>
+					  </label>
+						<div class="mdui-divider"></div>
+						<p>今天</p>
+					  <label class="mdui-list-item mdui-ripple">
+					    <div class="mdui-checkbox">
+					      <input type="checkbox" />
+					      <i class="mdui-checkbox-icon mdui-color-blue-60"  ></i>
+					    </div>
+					    <div class="mdui-list-item-content" >Freekg</div>
+					  </label>
+
+					  <div class="mdui-divider"></div>
+
+					  <p>添加</p>
+					  <div class="mdui-textfield" style="margin-bottom: 5px;">
+						  <input class="mdui-textfield-input" type="text" placeholder="to do" style="padding-left: 10px;" />
+						</div>
+						<select class="mdui-select" mdui-select style="margin-right: 5px;">
+						  <option value="1">今天</option>
+						  <option value="2">日常</option>
+						</select>
+						<select class="mdui-select" mdui-select style="margin-right: 5px;">
+						  <option value="1">无所属项目</option>
+						  <option value="2">GTDMaster</option>
+						  <option value="3">Freekg</option>
+						  <option value="4">MeetingRoom</option>
+						</select>
+						<button class="mdui-btn mdui-float-right mdui-color-deep-purple-900">Add</button>
+					</div> 
+				</div>
+				<!-- 清单-end -->
+				<!-- 项目 -->
+				<div id="projet" class="mdui-p-a-2">
+					<!-- 项目一 -->
+					<div class="mdui-card" style="margin-bottom: 15px;">
+					  <!-- 卡片的标题和副标题 -->
+					  <div class="mdui-card-primary mdui-typo">
+					    <div class="mdui-card-primary-title " style="color: #311B92;"><a href="" class="mdui-text-color-deep-purple-900">GTDMaster</a></div>
+					  </div>
+					  <!-- 卡片的内容 -->
+					  <div class="mdui-card-content">
+					  	一个关于GTD的项目
+					  	<button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">&#xe80d;</i></button>
+					  </div>
+					</div>
+					<!-- 项目二 -->
+					<div class="mdui-card" style="margin-bottom: 15px;">
+					  <!-- 卡片的标题和副标题 -->
+					  <div class="mdui-card-primary mdui-typo">
+					    <div class="mdui-card-primary-title" style="color: #311B92;"><a href="" class="mdui-text-color-deep-purple-900">Freekg</a></div>
+					  </div>
+					  <!-- 卡片的内容 -->
+					  <div class="mdui-card-content">
+							中文诗歌知识图谱
+							<button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">&#xe80d;</i></button>
+					  </div>
+					</div>
+					<!-- 项目三 -->
+					<div class="mdui-card" style="margin-bottom: 15px;">
+					  <!-- 卡片的标题和副标题 -->
+					  <div class="mdui-card-primary mdui-typo">
+					    <div class="mdui-card-primary-title" ><a href=""  class="mdui-text-color-deep-purple-900">MeetingRoom</a></div>
+					  </div>
+					  <!-- 卡片的内容 -->
+					  <div class="mdui-card-content">
+							预约会议室的APP
+							<button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">&#xe80d;</i></button>
+					  </div>
+					</div>
+				</div>
+				<!-- 项目-end -->
+				<!-- 统计 -->
+				<div id="statistics" class="mdui-p-a-2">还没想好怎么做orz</div>
+				<!-- 统计-end -->
+				<!-- 我关注的 -->
+				<div id="following" class="mdui-p-a-2">
+					<ul class="mdui-list">
+					  <li class="mdui-list-item mdui-ripple">
+					    <div class="mdui-list-item-avatar"><img src="html_imgs/ciel.jpg"/></div>
+					    <div class="mdui-list-item-content">Brendan Lim</div>
+					    <i class="mdui-list-item-icon mdui-icon material-icons">&#xe87d;</i>
+					  </li>
+					  <li class="mdui-list-item mdui-ripple">
+					    <div class="mdui-list-item-avatar"><img src="html_imgs/ciel.jpg"/></div>
+					    <div class="mdui-list-item-content">me, Scott, Jennifer</div>
+					    <i class="mdui-list-item-icon mdui-icon material-icons">&#xe87d;</i>
+					  </li>
+					  <li class="mdui-list-item mdui-ripple">
+					    <div class="mdui-list-item-avatar"><img src="html_imgs/ciel.jpg"/></div>
+					    <div class="mdui-list-item-content">Grace Ng</div>
+					    <i class="mdui-list-item-icon mdui-icon material-icons">&#xe87d;</i>
+					  </li>
+					  <li class="mdui-list-item mdui-ripple">
+					    <div class="mdui-list-item-avatar"><img src="html_imgs/ciel.jpg"/></div>
+					    <div class="mdui-list-item-content">Kerem Suer</div>
+					    <i class="mdui-list-item-icon mdui-icon material-icons">&#xe87d;</i>
+					  </li>
+					</ul>
+				</div>
+				<!-- 我关注的-end -->
+				<!-- 关注我的 -->
+				<div id="followers" class="mdui-p-a-2">
+					<ul class="mdui-list">
+					  <li class="mdui-list-item mdui-ripple">
+					    <div class="mdui-list-item-avatar"><img src="html_imgs/ciel.jpg"/></div>
+					    <div class="mdui-list-item-content">Brendan Lim</div>
+					    <i class="mdui-list-item-icon mdui-icon material-icons">&#xe87d;</i>
+					  </li>
+					  <li class="mdui-list-item mdui-ripple">
+					    <div class="mdui-list-item-avatar"><img src="html_imgs/ciel.jpg"/></div>
+					    <div class="mdui-list-item-content">me, Scott, Jennifer</div>
+					    <i class="mdui-icon material-icons">&#xe87e;</i>
+					  </li>
+					  <li class="mdui-list-item mdui-ripple">
+					    <div class="mdui-list-item-avatar"><img src="html_imgs/ciel.jpg"/></div>
+					    <div class="mdui-list-item-content">Grace Ng</div>
+					    <i class="mdui-icon material-icons">&#xe87e;</i>
+					  </li>
+					  <li class="mdui-list-item mdui-ripple">
+					    <div class="mdui-list-item-avatar"><img src="html_imgs/ciel.jpg"/></div>
+					    <div class="mdui-list-item-content">Kerem Suer</div>
+					    <i class="mdui-icon material-icons">&#xe87e;</i>
+					  </li>
+					</ul>
+				</div>
+				<!-- 关注我的-end -->
+			</div>
+		</div>
+		
+	</div>
+	<!-- 个人信息-end -->
+</body>
+</html>
