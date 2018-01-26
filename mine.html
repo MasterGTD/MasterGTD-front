@@ -7,6 +7,11 @@
 	<!-- UI框架MDUI -->
 	<link rel="stylesheet" type="text/css" href="mdui/css/mdui.min.css">
 	<script type="text/javascript" src="mdui/js/mdui.min.js"></script>
+	<!-- echarts -->
+	<script type="text/javascript" src="build/echarts.js"></script>
+	<script type="text/javascript" src="build/jquery.min.js"></script>
+	<!-- 数据统计图谱 -->
+	<script type="text/javascript" src="build/statistics.js"></script>
 	<!-- 单页面样式 -->
 	<link rel="stylesheet" type="text/css" href="css/mine.css">
 </head>
@@ -64,7 +69,7 @@
 			<div class="mdui-col-md-6 " style="margin-left: 10px;">
 				<div class="mdui-tab " mdui-tab style="border-bottom: 1px solid #BDBDBD">
 				  <a href="#list" class="mdui-ripple">今日清单</a>
-				  <a href="#projet" class="mdui-ripple">我的项目</a>
+				  <a href="#project" class="mdui-ripple">我的项目</a>
 				  <a href="#statistics" class="mdui-ripple">数据统计</a>
 				  <a href="#following" class="mdui-ripple">我关注的</a>
 				  <a href="#followers" class="mdui-ripple">关注我的</a>
@@ -130,7 +135,7 @@
 				</div>
 				<!-- 清单-end -->
 				<!-- 项目 -->
-				<div id="projet" class="mdui-p-a-2">
+				<div id="project" class="mdui-p-a-2">
 					<!-- 项目一 -->
 					<div class="mdui-card project-card-margin">
 					  <!-- 卡片的标题和副标题 -->
@@ -170,7 +175,19 @@
 				</div>
 				<!-- 项目-end -->
 				<!-- 统计 -->
-				<div id="statistics" class="mdui-p-a-2">还没想好怎么做orz</div>
+				<div id="statistics" class="mdui-p-a-2">
+					<div class="mdui-divider"></div>
+					<p>打卡统计</p>
+					<div id="clock-statistics" style="height: 400px;width: 700px;"></div>
+
+					<div class="mdui-divider"></div>
+					<p>完成度统计</p>
+					<div id="complete-statistics" style="height: 400px;width: 700px;"></div>
+
+					<div class="mdui-divider"></div>
+					<p style="width: 100%">项目对比统计</p>
+					<div id="project-statistics" style="height: 400px;width: 700px;"></div>	
+				</div>
 				<!-- 统计-end -->
 				<!-- 我关注的 -->
 				<div id="following" class="mdui-p-a-2">
@@ -226,7 +243,6 @@
 				<!-- 关注我的-end -->
 			</div>
 		</div>
-		
 	</div>
 	<!-- 个人信息-end -->
 </body>
