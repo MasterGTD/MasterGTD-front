@@ -4,7 +4,7 @@
 * 主要内容是颜色适配以及需要异步加载的类 
 */
 
-/*颜色适配，包括复选框，文本输入框，下拉选择*/
+/*颜色适配，包括复选框，文本输入框，下拉选择，链接动画*/
 .mdui-checkbox input[type=checkbox]:checked+.mdui-checkbox-icon:after {
     background-color: #2979FF;
     border-color: #2979FF;
@@ -17,6 +17,9 @@
 }
 .mdui-select-menu-item[selected] {
     color: #311B92;
+}
+.mdui-typo a:before {
+    background-color: #311B92;   
 }
 /*异步加载用到的类*/
 .myname{
