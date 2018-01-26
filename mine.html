@@ -18,12 +18,11 @@
 	<script type="text/babel" src="build/mine.js"></script>
 	<!-- 单页面样式 -->
 	<link rel="stylesheet" type="text/css" href="css/mine.css">
-
 </head>
 
 <body class="mdui-theme-primary-deep-purple ">
 	<!-- 上方导航条 -->
-	<div class="mdui-appbar mdui-appbar-scroll-hide" style="margin-bottom: 20px;">
+	<div class="mdui-appbar " style="margin-bottom: 20px;">
 		<!-- 工具栏 -->
 	  <div class="mdui-toolbar mdui-color-theme-900">
 	    <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe068;</i></a>
@@ -74,10 +73,10 @@
 			<div class="mdui-col-md-6 " style="margin-left: 10px;">
 				<div class="mdui-tab " mdui-tab style="border-bottom: 1px solid #BDBDBD">
 				  <a href="#list" class="mdui-ripple">今日清单</a>
+				  <a href="#dynamic" class="mdui-ripple">我的动态</a>
 				  <a href="#project" class="mdui-ripple">我的项目</a>
 				  <a href="#statistics" class="mdui-ripple">数据统计</a>
-				  <a href="#following" class="mdui-ripple">我关注的</a>
-				  <a href="#followers" class="mdui-ripple">关注我的</a>
+				  <a href="#follow" class="mdui-ripple">我的关注</a>
 				</div>
 				<!-- 清单 -->
 				<div id="list" class="mdui-p-a-2 ">
@@ -190,12 +189,14 @@
 					<div id="complete-statistics" style="height: 400px;width: 700px;"></div>
 
 					<div class="mdui-divider"></div>
-					<p style="width: 100%">项目对比统计</p>
+					<p>项目对比统计</p>
 					<div id="project-statistics" style="height: 400px;width: 700px;"></div>	
 				</div>
 				<!-- 统计-end -->
-				<!-- 我关注的 -->
-				<div id="following" class="mdui-p-a-2">
+				<!-- 我的关注 -->
+				<div id="follow" class="mdui-p-a-2">
+					<p class="mdui-text-color-theme-900">我关注的</p>
+					<div class="mdui-divider"></div>
 					<ul class="mdui-list">
 					  <li class="mdui-list-item mdui-ripple">
 					    <div class="mdui-list-item-avatar"><img src="html_imgs/ciel.jpg"/></div>
@@ -218,11 +219,36 @@
 					    <i class="mdui-list-item-icon mdui-icon material-icons">&#xe87d;</i>
 					  </li>
 					</ul>
+
+					<p class="mdui-text-color-theme-900">关注我的</p>
+					<div class="mdui-divider"></div>
+					<ul class="mdui-list">
+					  <li class="mdui-list-item mdui-ripple">
+					    <div class="mdui-list-item-avatar"><img src="html_imgs/ciel.jpg"/></div>
+					    <div class="mdui-list-item-content">Brendan Lim</div>
+					    <i class="mdui-list-item-icon mdui-icon material-icons">&#xe87d;</i>
+					  </li>
+					  <li class="mdui-list-item mdui-ripple">
+					    <div class="mdui-list-item-avatar"><img src="html_imgs/ciel.jpg"/></div>
+					    <div class="mdui-list-item-content">me, Scott, Jennifer</div>
+					    <i class="mdui-icon material-icons">&#xe87e;</i>
+					  </li>
+					  <li class="mdui-list-item mdui-ripple">
+					    <div class="mdui-list-item-avatar"><img src="html_imgs/ciel.jpg"/></div>
+					    <div class="mdui-list-item-content">Grace Ng</div>
+					    <i class="mdui-icon material-icons">&#xe87e;</i>
+					  </li>
+					  <li class="mdui-list-item mdui-ripple">
+					    <div class="mdui-list-item-avatar"><img src="html_imgs/ciel.jpg"/></div>
+					    <div class="mdui-list-item-content">Kerem Suer</div>
+					    <i class="mdui-icon material-icons">&#xe87e;</i>
+					  </li>
+					</ul>
 				</div>
-				<!-- 我关注的-end -->
+				<!-- 我的关注-end -->
 				<!-- 关注我的 -->
-				<div id="followers" class="mdui-p-a-2">
-					<ul class="mdui-list">
+				<!-- <div id="followers" class="mdui-p-a-2"> -->
+					<!-- <ul class="mdui-list">
 					  <li class="mdui-list-item mdui-ripple">
 					    <div class="mdui-list-item-avatar"><img src="html_imgs/ciel.jpg"/></div>
 					    <div class="mdui-list-item-content">Brendan Lim</div>
@@ -243,8 +269,8 @@
 					    <div class="mdui-list-item-content">Kerem Suer</div>
 					    <i class="mdui-icon material-icons">&#xe87e;</i>
 					  </li>
-					</ul>
-				</div>
+					</ul> -->
+				<!-- </div> -->
 				<!-- 关注我的-end -->
 			</div>
 		</div>
