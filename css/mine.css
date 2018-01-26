@@ -1,3 +1,10 @@
+/*
+* Created by 67 on 2018/1/26
+* 用于[我的主页]
+* 主要内容是颜色适配以及需要异步加载的类 
+*/
+
+/*颜色适配，包括复选框，文本输入框，下拉选择*/
 .mdui-checkbox input[type=checkbox]:checked+.mdui-checkbox-icon:after {
     background-color: #2979FF;
     border-color: #2979FF;
@@ -10,4 +17,16 @@
 }
 .mdui-select-menu-item[selected] {
     color: #311B92;
+}
+/*异步加载用到的类*/
+.myname{
+	font-size: 18px; 
+	font-weight:300; 
+}
+.myintroduce{
+	font-size: 14px;
+	font-style: oblique;
+}
+.project-card-margin{
+	margin-bottom: 15px;
 }
