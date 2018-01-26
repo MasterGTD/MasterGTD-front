@@ -31,7 +31,8 @@ $(document).ready(function(){
 	        }
 	    },
 	    calendar: {
-	        range: '2018',
+	        // range: '2018',
+	        range:['2018-01','2018-07'],
 		    // cellSize: ['auto',30],
 		    yearLabel:{
 		    	position:'top'
