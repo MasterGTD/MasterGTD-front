@@ -1,0 +1,123 @@
+<html>
+<head>
+	<title>谨行</title>
+	<meta charset="utf-8">
+
+	<!-- UI框架MDUI -->
+	<link rel="stylesheet" type="text/css" href="mdui/css/mdui.min.css">
+	<script type="text/javascript" src="mdui/js/mdui.min.js"></script>
+	<!-- echarts，jquery，React -->
+	<script type="text/javascript" src="build/echarts.js"></script>
+	<script type="text/javascript" src="build/jquery.min.js"></script>
+	<script src="build/react.js"></script>
+  	<script src="build/react-dom.js"></script>
+  	<script src="build/browser.min.js"></script>
+	<!-- 数据统计图谱，事件添加 -->
+	<script type="text/javascript" src="build/statistics.js"></script>
+	<script type="text/babel" src="build/mine.js"></script>
+	<!-- 单页面样式 -->
+	<link rel="stylesheet" type="text/css" href="css/focus.css">
+</head>
+
+<body class="mdui-theme-primary-deep-purple ">
+	<!-- 上方导航条 -->
+	<div class="mdui-appbar " style="margin-bottom: 20px;">
+		<!-- 工具栏 -->
+	  <div class="mdui-toolbar mdui-color-theme-900">
+	    <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe068;</i></a>
+	    <a href="javascript:;" class="mdui-typo-title">GTDMaster</a>
+	    <div class="mdui-toolbar-spacer"></div>
+	    <a href="" class="mdui-btn">注册</a>
+	    <a href="" class="mdui-btn">登录</a>
+	  </div>
+	  <!-- tab选项卡 -->
+	  <div class="mdui-tab mdui-color-theme-900 mdui-container-fluid mdui-row" mdui-tab>
+	    <a href="#example3-tab1" class="mdui-ripple mdui-ripple-white">我的</a>
+	    <a href="#example3-tab1" class="mdui-ripple mdui-ripple-white">关注</a>
+	    <a href="#example3-tab1" class="mdui-ripple mdui-ripple-white">推荐</a>
+	    <a href="#example3-tab1" class="mdui-ripple mdui-ripple-white">广场</a>
+	    <a href="#example3-tab1" class="mdui-ripple mdui-ripple-white">通知</a>
+	    <div class="mdui-toolbar-spacer"></div>
+	    <div class="mdui-textfield mdui-col-xs-3" >
+			  <i class="mdui-icon material-icons" style="color: white;">search</i>
+			  <input type="text" class="mdui-textfield-input searchbar_input searchbar_input_activity" style="color: black;border-color:white; background:white; border-radius:12px; padding-left: 15px; " placeholder="whatever comes to your mind" />
+			</div>
+	  </div>
+	</div>
+	<!-- nav-end -->
+	<!-- 信息流主体部分 -->
+	<div class="mdui-container-fluid ">
+		<div class="mdui-row">
+			<div class="mdui-col-md-6 mdui-col-offset-md-2" >
+					<div class="mdui-tab mdui-tab-centered" mdui-tab style="border-bottom: 1px solid #BDBDBD;margin-bottom: 20px;">
+					  <a href="#hot" class="mdui-ripple">最热</a>
+					  <a href="#new" class="mdui-ripple">最新</a>
+					</div>
+					<!-- 信息一 -->
+					<div class="mdui-card   card-margin-bori" id="hot">
+						<div class="mdui-card-header">
+					    <img class="mdui-card-header-avatar" src="html_imgs/ciel.jpg"/>
+					    <div class="mdui-card-header-title">来杯98年的橙汁</div>
+					    <div class="mdui-card-header-subtitle">2018/1/29</div>
+					  </div>					    					     
+					  <!-- 卡片的内容 -->
+					  <div class="mdui-card-content">子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？晒黑董师傅嗷嗷发货哦啊发爱好发货发哦和发哦符号和爱过后抛光昂Asia噶散户师傅给」</div>
+					  <!-- 卡片的按钮 -->
+					  <div class="mdui-card-actions">
+					    <!-- <button class="mdui-btn mdui-ripple">action 1</button> -->
+					    <button class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe8dc;</i></button>
+					    <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
+					  </div> 
+					</div>
+					<!-- 信息一-end -->
+					<!-- 信息二 -->
+					<div class="mdui-card   card-margin-bori" id="new">					    					     
+					  <!-- 卡片的标题和副标题 -->
+					  <div class="mdui-card-header">
+					    <img class="mdui-card-header-avatar" src="html_imgs/ciel.jpg"/>
+					    <div class="mdui-card-header-title">来杯98年的橙汁</div>
+					    <div class="mdui-card-header-subtitle">2018/1/29</div>
+					  </div>
+					  <div class="mdui-card-primary">
+					    <!-- <div class="mdui-card-primary-title">Title</div> -->
+					    <div class="mdui-card-primary-subtitle">今日清单</div>
+					  </div>
+					  <!-- 卡片的内容 -->
+					  <div class="mdui-card-content mdui-container-fluid mdui-row">
+					  	<ul class="mdui-list mdui-list-dense mdui-col-md-6">
+							  <li class="mdui-list-item ">
+							    <i class="mdui-list-item-icon mdui-icon material-icons">&#xe834;</i>
+							    <div class="mdui-list-item-content">Inbox</div>
+							  </li>
+							  <li class="mdui-list-item ">
+							    <i class="mdui-list-item-icon mdui-icon material-icons">&#xe834;</i>
+							    <div class="mdui-list-item-content">Outbox</div>
+							  </li>
+							</ul>
+							<ul class="mdui-list mdui-list-dense mdui-col-md-6">
+							  <li class="mdui-list-item ">
+							    <i class="mdui-list-item-icon mdui-icon material-icons">&#xe835;</i>
+							    <div class="mdui-list-item-content">Spam</div>
+							  </li>
+							</ul>
+					  </div>
+					  <!-- 卡片的按钮 -->
+					  <div class="mdui-card-actions">
+					    <!-- <button class="mdui-btn mdui-ripple">action 1</button> -->
+					    <button class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe8dc;</i></button>
+					    <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
+					  </div>
+					</div>
+					<!-- 信息二-end -->
+			</div>
+			<div class="mdui-col-md-2 " style="margin-left: 10px;">
+				<p>TOPICS</p>
+				<hr>
+			</div>
+		</div>
+	</div>
+	<!-- 信息流-end -->
+	<!-- 浮动操作按钮 -->
+	<button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-900" mdui-tooltip="{content: '发表动态'}"><i class="mdui-icon material-icons">add</i></button>
+</body>
+</html>
