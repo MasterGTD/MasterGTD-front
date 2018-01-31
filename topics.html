@@ -1,0 +1,125 @@
+<html>
+<head>
+	<title>谨行</title>
+	<meta charset="utf-8">
+
+	<!-- UI框架MDUI -->
+	<link rel="stylesheet" type="text/css" href="mdui/css/mdui.min.css">
+	<script type="text/javascript" src="mdui/js/mdui.min.js"></script>
+	<!-- echarts，jquery，React -->
+	<script type="text/javascript" src="build/echarts.js"></script>
+	<script type="text/javascript" src="build/jquery.min.js"></script>
+	<script src="build/react.js"></script>
+  	<script src="build/react-dom.js"></script>
+  	<script src="build/browser.min.js"></script>
+	<!-- 数据统计图谱，事件添加 -->
+	<script type="text/javascript" src="build/statistics.js"></script>
+	<script type="text/babel" src="build/mine.js"></script>
+	<!-- 单页面样式 -->
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/topics.css">
+	<!-- 图片轮播-->
+	<script type="text/javascript" src="./build/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="./build/jquery.banner.revolution.min.js"></script>
+	<script type="text/javascript" src="./build/banner.js"></script>
+</head>
+
+<body class="mdui-theme-primary-deep-purple mdui-theme-accent-deep-purple">
+	<!-- 上方导航条 -->
+	<div class="mdui-appbar " >
+		<!-- 工具栏 -->
+	  <div class="mdui-toolbar mdui-color-theme-900">
+	    <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe068;</i></a>
+	    <a href="javascript:;" class="mdui-typo-title">GTDMaster</a>
+	    <div class="mdui-toolbar-spacer"></div>
+	    <a href="" class="mdui-btn">注册</a>
+	    <a href="" class="mdui-btn">登录</a>
+	  </div>
+	  <!-- tab选项卡 -->
+	  <div class="mdui-tab mdui-color-theme-900 mdui-container-fluid mdui-row" mdui-tab>
+	    <a href="mine.html" class="mdui-ripple mdui-ripple-white ">我的</a>
+	    <a href="focus.html" class="mdui-ripple mdui-ripple-white">关注</a>
+	    <a href="recommend.html" class="mdui-ripple mdui-ripple-white">推荐</a>
+	    <a href="topics.html" class="mdui-ripple mdui-ripple-white mdui-tab-active">广场</a>
+	    <a href="#example3-tab1" class="mdui-ripple mdui-ripple-white">通知</a>
+	    <div class="mdui-toolbar-spacer"></div>
+	    <div class="mdui-textfield mdui-col-xs-3" >
+			  <i class="mdui-icon material-icons" style="color: white;">search</i>
+			  <input type="text" class="mdui-textfield-input searchbar_input searchbar_input_activity" style="color: black;border-color:white; background:white; border-radius:12px; padding-left: 15px; " placeholder="whatever comes to your mind" />
+			</div>
+	  </div>
+	</div>
+	<!-- nav-end -->
+	<!-- 图片轮播 -->
+	<div id="wrapper">
+		<div class="fullwidthbanner-container">
+			<div class="fullwidthbanner">
+				<ul>
+					<li data-transition="3dcurtain-horizontal" data-slotamount="15" data-masterspeed="300">
+						<img src="./css/img/HD1.jpg" alt="" />
+					</li>
+					<li data-transition="3dcurtain-vertical" data-slotamount="15" data-masterspeed="300" data-link="#">
+						<img src="./css/img/KM2.jpg" alt="" />
+					</li>
+					<li data-transition="papercut" data-slotamount="15" data-masterspeed="300" data-link="#">
+						<img src="./css/img/HD2.jpg" alt="" />
+					</li>
+					<li data-transition="turnoff" data-slotamount="15" data-masterspeed="300">
+						<img src="./css/img/KM3.jpg" alt="" />
+					</li>
+					<li data-transition="flyin" data-slotamount="15" data-masterspeed="300">
+						<img src="./css/img/HD3_1.png" alt="" />
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div style="text-align:center;clear:both;margin-bottom: 20px;">
+		<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+		<script src="/follow.js" type="text/javascript"></script>
+	</div>
+	<!-- 图片轮播-end -->
+	<!-- 信息显示 -->
+	<div class="mdui-container-fluid">
+		<div class="mdui-row">
+			<div class="mdui-col-offset-md-2 mdui-col-md-8">
+				<!-- 话题一 -->
+				<div class="mdui-card card-margin-bottom">
+				  <!-- 卡片的标题和副标题 -->
+				  <div class="mdui-card-primary mdui-typo">
+				    <div class="mdui-card-primary-title "><a href="" class="mdui-text-color-theme-900">今天写日记了吗</a></div>
+				  </div>
+				  <!-- 卡片的内容 -->
+				  <div class="mdui-card-content">
+				  	Hi，你今天写日记了吗？
+				  </div>
+				</div>
+				<!-- 项目二 -->
+				<div class="mdui-card card-margin-bottom">
+				  <!-- 卡片的标题和副标题 -->
+				  <div class="mdui-card-primary mdui-typo">
+				    <div class="mdui-card-primary-title"><a href="" class="mdui-text-color-theme-900">今天背单词了吗</a></div>
+				  </div>
+				  <!-- 卡片的内容 -->
+				  <div class="mdui-card-content">
+						Hi,你今天背单词了吗？
+				  </div>
+				</div>
+				<!-- 项目三 -->
+				<div class="mdui-card card-margin-bottom">
+				  <!-- 卡片的标题和副标题 -->
+				  <div class="mdui-card-primary mdui-typo">
+				    <div class="mdui-card-primary-title" ><a href=""  class="mdui-text-color-theme-900">汉姆跑了吗</a></div>
+				  </div>
+				  <!-- 卡片的内容 -->
+				  <div class="mdui-card-content">
+						少年打球吗？
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+</body>
+</html>

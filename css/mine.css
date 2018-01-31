@@ -5,7 +5,7 @@
 */
 
 /*颜色适配，包括复选框，文本输入框，下拉选择，链接动画*/
-.mdui-checkbox input[type=checkbox]:checked+.mdui-checkbox-icon:after {
+/*.mdui-checkbox input[type=checkbox]:checked+.mdui-checkbox-icon:after {
     background-color: #2979FF;
     border-color: #2979FF;
 }
@@ -20,7 +20,7 @@
 }
 .mdui-typo a:before {
     background-color: #311B92;   
-}
+}*/
 /*异步加载用到的类*/
 .myname{
 	font-size: 18px; 
@@ -30,6 +30,6 @@
 	font-size: 14px;
 	font-style: oblique;
 }
-.card-margin-bottom{
+/*.card-margin-bottom{
 	margin-bottom: 15px;
-}
+}*/

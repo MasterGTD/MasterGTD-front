@@ -1,0 +1,17 @@
+/*
+* Created by 67 on 2018/1/31
+* 用于所有页面
+* 主要内容是可复用的组件类 
+*/
+
+.card-margin-bottom{
+	margin-bottom: 15px;
+}
+.label{
+	border: 1pt solid #311B92;
+	border-radius:12px;
+	color: #311B92;
+}
+.label-list{
+	border-bottom: 1pt solid #311B92;
+}

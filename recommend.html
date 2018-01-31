@@ -16,10 +16,10 @@
 	<script type="text/javascript" src="build/statistics.js"></script>
 	<script type="text/babel" src="build/mine.js"></script>
 	<!-- 单页面样式 -->
-	<link rel="stylesheet" type="text/css" href="css/focus.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
 </head>
 
-<body class="mdui-theme-primary-deep-purple ">
+<body class="mdui-theme-primary-deep-purple mdui-theme-accent-deep-purple">
 	<!-- 上方导航条 -->
 	<div class="mdui-appbar " style="margin-bottom: 20px;">
 		<!-- 工具栏 -->
@@ -32,10 +32,10 @@
 	  </div>
 	  <!-- tab选项卡 -->
 	  <div class="mdui-tab mdui-color-theme-900 mdui-container-fluid mdui-row" mdui-tab>
-	    <a href="#example3-tab1" class="mdui-ripple mdui-ripple-white">我的</a>
-	    <a href="#example3-tab1" class="mdui-ripple mdui-ripple-white">关注</a>
-	    <a href="#example3-tab1" class="mdui-ripple mdui-ripple-white">推荐</a>
-	    <a href="#example3-tab1" class="mdui-ripple mdui-ripple-white">广场</a>
+	    <a href="mine.html" class="mdui-ripple mdui-ripple-white">我的</a>
+	    <a href="focus.html" class="mdui-ripple mdui-ripple-white">关注</a>
+	    <a href="recommend.html" class="mdui-ripple mdui-ripple-white mdui-tab-active">推荐</a>
+	    <a href="topics.html" class="mdui-ripple mdui-ripple-white">广场</a>
 	    <a href="#example3-tab1" class="mdui-ripple mdui-ripple-white">通知</a>
 	    <div class="mdui-toolbar-spacer"></div>
 	    <div class="mdui-textfield mdui-col-xs-3" >
@@ -53,66 +53,119 @@
 					  <a href="#hot" class="mdui-ripple">最热</a>
 					  <a href="#new" class="mdui-ripple">最新</a>
 					</div>
-					<!-- 信息一 -->
-					<div class="mdui-card   card-margin-bori" id="hot">
-						<div class="mdui-card-header">
-					    <img class="mdui-card-header-avatar" src="html_imgs/ciel.jpg"/>
-					    <div class="mdui-card-header-title">来杯98年的橙汁</div>
-					    <div class="mdui-card-header-subtitle">2018/1/29</div>
-					  </div>					    					     
-					  <!-- 卡片的内容 -->
-					  <div class="mdui-card-content">子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？晒黑董师傅嗷嗷发货哦啊发爱好发货发哦和发哦符号和爱过后抛光昂Asia噶散户师傅给」</div>
-					  <!-- 卡片的按钮 -->
-					  <div class="mdui-card-actions">
-					    <!-- <button class="mdui-btn mdui-ripple">action 1</button> -->
-					    <button class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe8dc;</i></button>
-					    <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
-					  </div> 
+					<!-- 最热 -->
+					<div id="hot">
+						<!-- 信息三 -->
+						<div class="mdui-card card-margin-bottom">
+						  <!-- 卡片的标题和副标题 -->
+						  <div class="mdui-card-header">
+						    <img class="mdui-card-header-avatar" src="html_imgs/ciel.jpg"/>
+						    <div class="mdui-card-header-title mdui-typo"><a href="" class="mdui-text-color-theme-900">来杯98年的橙汁</a></div>
+						    <div class="mdui-card-header-subtitle">2018/1/29</div>
+						  </div>
+						  <div class="mdui-card-primary mdui-typo">
+						    <div class="mdui-card-primary-title "><a href="" class="mdui-text-color-theme-900">GTDMaster</a></div>
+						  </div>
+						  <!-- 卡片的内容 -->
+						  <div class="mdui-card-content">
+						  	一个关于GTD的项目
+						  </div>
+						  <div class="mdui-card-content">
+						  	<hr>
+						  	子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？晒黑董师傅嗷嗷发货哦啊发爱好发货发哦和发哦符号和爱过后抛光昂Asia噶散户师傅给」
+						  </div>
+						  <!-- 卡片按钮 -->
+						  <div class="mdui-card-actions">
+						    <!-- <button class="mdui-btn mdui-ripple">action 1</button> -->
+						    <button class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe8dc;</i></button>
+						    <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
+						  </div>
+						</div>
+						<!-- 信息三-end -->
+						<!-- 信息一 -->
+						<div class="mdui-card   card-margin-bottom" >
+							<div class="mdui-card-header ">
+						    <img class="mdui-card-header-avatar" src="html_imgs/ciel.jpg"/>
+						    <div class="mdui-card-header-title mdui-typo"><a href="" class="mdui-text-color-theme-900">来杯98年的橙汁</a></div>
+						    <div class="mdui-card-header-subtitle">2018/1/29</div>
+						  </div>					    					     
+						  <!-- 卡片的内容 -->
+						  <div class="mdui-card-content">子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？晒黑董师傅嗷嗷发货哦啊发爱好发货发哦和发哦符号和爱过后抛光昂Asia噶散户师傅给」</div>
+						  <!-- 卡片的按钮 -->
+							<div class="mdui-card-content">
+								<button class="mdui-btn label">今天学习了吗</button>
+								<button class="mdui-btn label">今天背诗了吗</button>
+							</div>
+						  <div class="mdui-card-actions">
+						    <!-- <button class="mdui-btn mdui-ripple">action 1</button> -->
+						    <button class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe8dc;</i></button>
+						    <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
+						  </div> 
+						</div>
+						<!-- 信息一-end -->
 					</div>
-					<!-- 信息一-end -->
-					<!-- 信息二 -->
-					<div class="mdui-card   card-margin-bori" id="new">					    					     
-					  <!-- 卡片的标题和副标题 -->
-					  <div class="mdui-card-header">
-					    <img class="mdui-card-header-avatar" src="html_imgs/ciel.jpg"/>
-					    <div class="mdui-card-header-title">来杯98年的橙汁</div>
-					    <div class="mdui-card-header-subtitle">2018/1/29</div>
-					  </div>
-					  <div class="mdui-card-primary">
-					    <!-- <div class="mdui-card-primary-title">Title</div> -->
-					    <div class="mdui-card-primary-subtitle">今日清单</div>
-					  </div>
-					  <!-- 卡片的内容 -->
-					  <div class="mdui-card-content mdui-container-fluid mdui-row">
-					  	<ul class="mdui-list mdui-list-dense mdui-col-md-6">
-							  <li class="mdui-list-item ">
-							    <i class="mdui-list-item-icon mdui-icon material-icons">&#xe834;</i>
-							    <div class="mdui-list-item-content">Inbox</div>
-							  </li>
-							  <li class="mdui-list-item ">
-							    <i class="mdui-list-item-icon mdui-icon material-icons">&#xe834;</i>
-							    <div class="mdui-list-item-content">Outbox</div>
-							  </li>
-							</ul>
-							<ul class="mdui-list mdui-list-dense mdui-col-md-6">
-							  <li class="mdui-list-item ">
-							    <i class="mdui-list-item-icon mdui-icon material-icons">&#xe835;</i>
-							    <div class="mdui-list-item-content">Spam</div>
-							  </li>
-							</ul>
-					  </div>
-					  <!-- 卡片的按钮 -->
-					  <div class="mdui-card-actions">
-					    <!-- <button class="mdui-btn mdui-ripple">action 1</button> -->
-					    <button class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe8dc;</i></button>
-					    <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
-					  </div>
+					<!-- 最热-end -->
+					<!-- 最新 -->
+					<div id="new">
+						<!-- 信息二 -->
+						<div class="mdui-card   card-margin-bottom" >					    					     
+						  <!-- 卡片的标题和副标题 -->
+						  <div class="mdui-card-header">
+						    <img class="mdui-card-header-avatar" src="html_imgs/ciel.jpg"/>
+						    <div class="mdui-card-header-title mdui-typo"><a href="" class="mdui-text-color-theme-900">来杯98年的橙汁</a></div>
+						    <div class="mdui-card-header-subtitle">2018/1/29</div>
+						  </div>
+						  <!-- 卡片的内容 -->
+						  <div class="mdui-card-content mdui-container-fluid mdui-row">
+						  	<ul class="mdui-list mdui-list-dense mdui-col-md-6">
+								  <li class="mdui-list-item ">
+								    <i class="mdui-list-item-icon mdui-icon material-icons">&#xe834;</i>
+								    <div class="mdui-list-item-content">Inbox</div>
+								  </li>
+								  <li class="mdui-list-item ">
+								    <i class="mdui-list-item-icon mdui-icon material-icons">&#xe834;</i>
+								    <div class="mdui-list-item-content">Outbox</div>
+								  </li>
+								</ul>
+								<ul class="mdui-list mdui-list-dense mdui-col-md-6">
+								  <li class="mdui-list-item ">
+								    <i class="mdui-list-item-icon mdui-icon material-icons">&#xe835;</i>
+								    <div class="mdui-list-item-content">Spam</div>
+								  </li>
+								</ul>
+						  </div>
+						  <!-- 卡片的按钮 -->
+						  <div class="mdui-card-actions">
+						    <!-- <button class="mdui-btn mdui-ripple">action 1</button> -->
+						    <button class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe8dc;</i></button>
+						    <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
+						  </div>
+						</div>
+						<!-- 信息二-end -->
 					</div>
-					<!-- 信息二-end -->
+					<!-- 最新-end -->
 			</div>
 			<div class="mdui-col-md-2 " style="margin-left: 10px;">
 				<p>TOPICS</p>
-				<hr>
+				<div class="mdui-divider"></div>
+					<ul class="mdui-list">
+					  <li class="mdui-list-item mdui-ripple">
+					    <!-- <div class="mdui-list-item-content label-list">今天背单词了吗</div> -->
+					    <button class="mdui-btn label">今天学习了吗</button>
+					  </li>
+					  <li class="mdui-list-item mdui-ripple">	
+					  	<button class="mdui-btn label">今天写日记了吗</button>				  
+					    <!-- <div class="mdui-list-item-content label-list">今天写日记了吗</div> -->
+					  </li>
+					  <li class="mdui-list-item mdui-ripple">
+					  	<button class="mdui-btn label">今天锻炼了吗</button>
+					    <!-- <div class="mdui-list-item-content label-list">今天刷题了吗</div> -->
+					  </li>
+					  <li class="mdui-list-item mdui-ripple">
+					  	<button class="mdui-btn label">今天读书做笔记了吗</button>					  
+					    <!-- <div class="mdui-list-item-content label-list">今天锻炼了吗</div>					     -->
+					  </li>
+					</ul>
 			</div>
 		</div>
 	</div>
