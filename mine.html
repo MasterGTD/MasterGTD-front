@@ -10,12 +10,12 @@
 	<!-- echarts，jquery，React -->
 	<script type="text/javascript" src="build/echarts.js"></script>
 	<script type="text/javascript" src="build/jquery.min.js"></script>
-	<script src="build/react.js"></script>
-    <script src="build/react-dom.js"></script>
-    <script src="build/browser.min.js"></script>
+	<!-- <script src="build/react.js"></script> -->
+    <!-- <script src="build/react-dom.js"></script> -->
+    <!-- <script src="build/browser.min.js"></script> -->
 	<!-- 数据统计图谱，事件添加 -->
-	<script type="text/javascript" src="build/statistics.js"></script>
-	<script type="text/babel" src="build/mine.js"></script>
+	<!-- <script type="text/javascript" src="build/statistics.js"></script> -->
+	<script type="text/javascript" src="build/mine.js"></script>
 	<!-- 单页面样式 -->
 	<link rel="stylesheet" type="text/css" href="css/mine.css">
 	<link rel="stylesheet" type="text/css" href="css/all.css">
@@ -85,7 +85,9 @@
 				<div id="list" class="mdui-p-a-2 ">
 					<div class="mdui-list ">
 						<div class="mdui-divider"></div>
-						<p>日常</p>
+						<!-- <p>日常</p> -->
+						
+						<div id="mainlist">
 					  <label class="mdui-list-item mdui-ripple ">
 					    <div class="mdui-checkbox">
 					      <input type="checkbox" />
@@ -111,8 +113,8 @@
 					    </div>
 					    <div class="mdui-list-item-content" >练字</div>
 					  </label>
-						<div class="mdui-divider"></div>
-						<p>今天</p>
+						<!-- <div class="mdui-divider"></div> -->
+						<!-- <p>今天</p> -->
 					  <label class="mdui-list-item mdui-ripple">
 					    <div class="mdui-checkbox">
 					      <input type="checkbox" />
@@ -120,12 +122,14 @@
 					    </div>
 					    <div class="mdui-list-item-content" >Freekg</div>
 					  </label>
+					</div>
+
 
 					  <div class="mdui-divider"></div>
 
 					  <p>添加</p>
 					  <div class="mdui-textfield " style="margin-bottom: 5px;">
-						  <input class="mdui-textfield-input " type="text" placeholder="to do" style="padding-left: 10px;" />
+						  <input class="mdui-textfield-input " type="text" placeholder="to do" style="padding-left: 10px;" id="addinput" />
 						</div>
 						<select class="mdui-select " mdui-select style="margin-right: 5px;">
 						  <option value="1">今天</option>
@@ -137,7 +141,7 @@
 						  <option value="3">Freekg</option>
 						  <option value="4">MeetingRoom</option>
 						</select>
-						<button class="mdui-btn mdui-float-right mdui-color-theme-900">Add</button>
+						<button class="mdui-btn mdui-float-right mdui-color-theme-900" id="addbtn">Add</button>
 					</div>
 					<!-- 浮动操作按钮 -->
 					<button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-900" mdui-tooltip="{content: '分享[今日清单]到[我的动态]'}"><i class="mdui-icon material-icons">&#xe80d;</i></button>

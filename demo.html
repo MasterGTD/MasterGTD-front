@@ -1,0 +1,133 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>谨行</title>
+  <meta charset="utf-8">
+
+  <!-- UI框架MDUI -->
+  <link rel="stylesheet" type="text/css" href="mdui/css/mdui.min.css">
+  <script type="text/javascript" src="mdui/js/mdui.min.js"></script>
+  <!-- echarts，jquery，React -->
+  <script type="text/javascript" src="build/echarts.js"></script>
+  <script type="text/javascript" src="build/jquery.min.js"></script>
+  <script src="build/react.js"></script>
+    <script src="build/react-dom.js"></script>
+    <script src="build/browser.min.js"></script>
+  <!-- 数据统计图谱，事件添加 -->
+  <script type="text/javascript" src="build/statistics.js"></script>
+  <script type="text/babel" src="build/mine.js"></script>
+  <!-- 单页面样式 -->
+  <link rel="stylesheet" type="text/css" href="css/mine.css">
+  <link rel="stylesheet" type="text/css" href="css/all.css">
+</head>
+
+<body class="mdui-theme-primary-deep-purple mdui-theme-accent-deep-purple">
+  
+  <!-- 个人信息部分 -->
+  <div class="mdui-container-fluid">
+    <div class="mdui-row">
+      <!-- 左侧资料卡 -->
+      <div class="mdui-col-md-2 mdui-col-offset-md-2">
+        
+      </div>
+      <!-- 右侧各种项目 -->
+      <div class="mdui-col-md-6 " style="margin-left: 10px;">
+        
+        <!-- 清单 -->
+        <div id="list" class="mdui-p-a-2 ">
+          <div class="mdui-list ">
+            <div class="mdui-divider"></div>
+            <!-- <p>日常</p> -->
+            
+            <div id="mainlist">
+            <!-- <label class="mdui-list-item mdui-ripple ">
+              <div class="mdui-checkbox">
+                <input type="checkbox" />
+                <i class="mdui-checkbox-icon "></i>
+              </div>
+              <div class="mdui-list-item-content">单词</div>
+              <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+            </label>
+
+            <label class="mdui-list-item mdui-ripple">
+              <div class="mdui-checkbox">
+                <input type="checkbox"/>
+                <i class="mdui-checkbox-icon"></i>
+              </div>
+              <div class="mdui-list-item-content">刷题</div>
+              <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+            </label>
+
+            <label class="mdui-list-item mdui-ripple">
+              <div class="mdui-checkbox">
+                <input type="checkbox" />
+                <i class="mdui-checkbox-icon"  ></i>
+              </div>
+              <div class="mdui-list-item-content" >练字</div>
+            </label>
+            <div class="mdui-divider"></div>
+            <p>今天</p>
+            <label class="mdui-list-item mdui-ripple">
+              <div class="mdui-checkbox">
+                <input type="checkbox" />
+                <i class="mdui-checkbox-icon"  ></i>
+              </div>
+              <div class="mdui-list-item-content" >Freekg</div>
+            </label> -->
+          </div>
+
+
+            <div class="mdui-divider"></div>
+
+            <p>添加</p>
+            <div class="mdui-textfield " style="margin-bottom: 5px;">
+              <input class="mdui-textfield-input " type="text" placeholder="to do" style="padding-left: 10px;" id="input" />
+            </div>
+            <select class="mdui-select " mdui-select style="margin-right: 5px;">
+              <option value="1">今天</option>
+              <option value="2">日常</option>
+            </select>
+            <select class="mdui-select " mdui-select style="margin-right: 5px;">
+              <option value="1">无所属项目</option>
+              <option value="2">GTDMaster</option>
+              <option value="3">Freekg</option>
+              <option value="4">MeetingRoom</option>
+            </select>
+            <button class="mdui-btn mdui-float-right mdui-color-theme-900" onclick="add();">Add</button>
+          </div>
+          <!-- 浮动操作按钮 -->
+          <button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-900" mdui-tooltip="{content: '分享[今日清单]到[我的动态]'}" ><i class="mdui-icon material-icons">&#xe80d;</i></button>
+        </div>
+        <!-- 清单-end -->
+        
+      </div>
+    </div>
+  </div>
+  <!-- 个人信息-end -->
+</body>
+</html>
+<script type="text/babel">
+
+var Label = React.createClass({
+  render: function() {
+    var value=document.getElementById('input').value;
+    return(
+      <label className="mdui-list-item mdui-ripple">
+                <div className="mdui-checkbox">
+                  <input type="checkbox" />
+                  <i className="mdui-checkbox-icon" ></i>
+                </div>
+                <div className="mdui-list-item-content" >{value}</div>
+     </label>
+    );
+  }   
+});
+
+var add=function(){
+  ReactDOM.render(
+    <Label />,
+    document.getElementById('mainlist')
+  );
+};
+
+    </script>
